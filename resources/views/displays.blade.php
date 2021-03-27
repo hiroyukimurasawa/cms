@@ -12,7 +12,7 @@
         <!-- バリデーションエラーの表示に使用-->
 <div class="display_wrapper">  
         <!-- 棚登録フォーム -->
-        <form action="{{ url('displays') }}" method="POST" class="form-horizontal">
+        <form enctype="multipart/form-data" action="{{ url('displays') }}"method="POST" class="form-horizontal">
             {{ csrf_field() }}
 
             <!-- 棚のタイトル -->
@@ -25,6 +25,11 @@
 
             <!-- 棚 登録ボタン -->
             <div class="form-group">
+            <!--file 追加-->
+        	<div class="col-sm-6">
+                <label>画像</label>
+                <input type="file" name="display_img">
+            </div>
                 <div class="col-sm-offset-3 col-sm-6">
                     <button type="submit" class="btn btn-primary">
                         登録
@@ -50,7 +55,7 @@
 			<td>005</td>
 			<td>004</td>
 			<td>003</td>
-			<td>002</td>
+			<td><button id="btn2" onclick="btn2Click();">002</button></td>
 			<td><button id="btn1" onclick="btn1Click();">001</button></td>
 			<td></td>
 		</tr>
@@ -197,6 +202,7 @@
                             <tr>
                                 <!-- 棚タイトル -->
                                 <td class="table-text">
+                                <div><img src="upload/{{$display->display_img}}" width="100"></div>
                                     <div>{{ $display->display_name }}</div>
                                 </td>
 				                <!-- 商品タイトル -->

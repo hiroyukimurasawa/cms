@@ -4,7 +4,7 @@
 <div class="row">
     <div class="col-md-12">
     @include('common.errors')
-    <form action="{{ url('displays/update') }}" method="POST">
+    <form enctype="multipart/form-data" action="{{ url('displays/update') }}" method="POST">
 
         <!-- display_name -->
         <div class="form-group">
@@ -13,6 +13,12 @@
         </div>
         <!-- Saveボタン/Backボタン -->
         <div class="well well-sm">
+            <!--file 追加-->
+        	<div class="col-sm-6">
+                <label>画像</label>
+                <input type="file" name="display_img">
+            </div>
+            <div><img src="upload/{{$display->display_img}}" width="100"></div>
             <button type="submit" class="btn btn-primary">更新</button>
             <a class="btn btn-link pull-right" href="{{ url('/') }}">
                 <i class="glyphicon glyphicon-backward"></i>  戻る
