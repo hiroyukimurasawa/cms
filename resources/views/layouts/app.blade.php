@@ -11,16 +11,19 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js',true) }}" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css',true) }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
+    <div>
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -71,7 +74,22 @@
                 </div>
             </div>
         </nav>
+        <!-- フラッシュメッセージ -->
+        <script type="text/javascript">
+            // {{--成功時--}}
+            @if (session('msg_success'))
+                $(function () {
+                    toastr.success('{{ session('msg_success') }}');
+                });
+            @endif
 
+            // {{--失敗時--}}
+            @if (session('msg_danger'))
+                $(function () {
+                    toastr.danger('{{ session('msg_danger') }}');
+                });
+            @endif
+        </script>
         <main class="py-4">
             @yield('content')
         </main>

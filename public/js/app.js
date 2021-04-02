@@ -49964,11 +49964,22 @@ module.exports = __webpack_require__(/*! /home/ec2-user/environment/cms/resource
 /***/ })
 
 /******/ });
+
 //ボタンをクリックした時の処理
-function btn1Click(){
-  document.getElementById("1").click();
+function display1Click(){
+  document.getElementById("display1").click();
 }
 
-function btn2Click(){
-  document.getElementById("2").click();
+function display2Click(){
+  document.getElementById("display2").click();
 }
+
+(function() {
+    'use strict';
+
+    // フラッシュメッセージのfadeout
+    $(function(){
+        $('.flash_message').fadeOut(3000);
+    });
+
+})();

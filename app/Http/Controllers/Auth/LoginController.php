@@ -22,11 +22,16 @@ class LoginController extends Controller
     use AuthenticatesUsers;
 
     /**
+     * ログインした時のリダイレクト先
      * Where to redirect users after login.
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    // protected $redirectTo = '/home';
+    protected function redirectTo() {
+        session()->flash('msg_success', 'ログインしました');
+        return '/home';
+    }
 
     /**
      * Create a new controller instance.

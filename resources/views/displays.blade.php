@@ -30,6 +30,7 @@
                 <label>画像</label>
                 <input type="file" name="display_img">
             </div>
+            
                 <div class="col-sm-offset-3 col-sm-6">
                     <button type="submit" class="btn btn-primary">
                         登録
@@ -55,8 +56,8 @@
 			<td>005</td>
 			<td>004</td>
 			<td>003</td>
-			<td><button id="btn2" onclick="btn2Click();">002</button></td>
-			<td><button id="btn1" onclick="btn1Click();">001</button></td>
+			<td><button id="dsp2" onclick="display2Click();">002</button></td>
+			<td><button id="dsp1" onclick="display1Click();">001</button></td>
 			<td></td>
 		</tr>
 		<tr>
@@ -212,8 +213,8 @@
                                 
                                     <form action="{{ url('displaysedit/'.$display->id) }}" method="POST">
                                         {{ csrf_field() }}
-                                        <button type="submit" id="{{$key+1}}" class="btn btn-primary">
-                                            <i class="glyphicon glyphicon-pencil">{{$key+1}}</i> 更新
+                                        <button type="submit" id="display{{$key+1}}" class="btn btn-primary">
+                                            <i class="glyphicon glyphicon-pencil"></i> 更新
                                         </button>
                                     </form>
                                 </td>

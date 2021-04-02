@@ -20,7 +20,7 @@ class CreateDisplaysTable extends Migration
             // $table->integer('item_number');
             //$table->integer('item_amount');
             //$table->datetime('published');
-            $table->string('display_img');
+            $table->string('display_img')->nullable();
             $table->timestamps();
         });
     }
