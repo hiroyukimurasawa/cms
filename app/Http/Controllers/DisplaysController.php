@@ -48,7 +48,7 @@ class DisplaysController extends Controller
         $displays->display_img  = $filename;
         $displays->save(); 
         // ”msg_success”に名前を変える
-        session()->flash('msg_success', '投稿が完了しました');
+        session()->flash('msg_success', '登録が完了しました');
         return redirect('/');
     }
     
@@ -68,9 +68,9 @@ class DisplaysController extends Controller
         }
     //ファイルアップロード
     $file = $request->file('display_img'); //file取得
-    if( !empty($file) ){                //fileが空かチェック
-        $filename = $file->getClientOriginalName();   //ファイル名を取得
-        $move = $file->move('./upload/',$filename);  //ファイルを移動：パスが“./upload/”の場合もあるCloud9
+    if( !empty($file) ){                   //fileが空かチェック
+        $filename = $file->getClientOriginalName(); //ファイル名を取得
+        $move = $file->move('./upload/',$filename); //ファイルを移動：パスが“./upload/”の場合もあるCloud9
     }else{
         $filename = "";
     } 
@@ -79,7 +79,9 @@ class DisplaysController extends Controller
         $displays->display_name = $request->display_name;
         $displays->display_img  = $filename;
         $displays->save();
-        return redirect('/');
+    // ”msg_success”に名前を変える
+    session()->flash('msg_success', '更新が完了しました');
+    return redirect('/');
     }
 
     //更新画面
