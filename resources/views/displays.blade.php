@@ -10,7 +10,8 @@
         <!-- バリデーションエラーの表示に使用-->
         @include('common.errors')
         <!-- バリデーションエラーの表示に使用-->
-<div class="display_wrapper">  
+<div class="display_wrapper">
+	@can('webmastar')
         <!-- 棚登録フォーム -->
         <form enctype="multipart/form-data" action="{{ url('displays') }}"method="POST" class="form-horizontal">
             {{ csrf_field() }}
@@ -38,6 +39,7 @@
                 </div>
             </div>
         </form>
+    @endcan
 <table>
 	<tbody>
 		<tr>
@@ -95,7 +97,7 @@
 		</tr>
 		<tr>
 			<td><button id="dsp61" class="dspbtn" onclick="display61Click();">061</button></td>
-			<td><button id="dsp3" class="dspbtn" onclick="display34Click();">034</button></td>
+			<td><button id="dsp34" class="dspbtn" onclick="display34Click();">034</button></td>
 			<td><button id="dsp35" class="dspbtn" onclick="display35Click();">035</button></td>
 			<td><button id="dsp26" class="dspbtn" onclick="display26Click();">026</button></td>
 			<td><button id="dsp27" class="dspbtn" onclick="display27Click();">027</button></td>
@@ -214,11 +216,12 @@
                                     <form action="{{ url('displaysedit/'.$display->id) }}" method="POST">
                                         {{ csrf_field() }}
                                         <button type="submit" id="display{{$key+1}}" class="btn btn-primary">
-                                            <i class="glyphicon glyphicon-pencil"></i> 更新
+                                            <i class="glyphicon glyphicon-pencil"></i> 閲覧、更新
                                         </button>
                                     </form>
                                 </td>
                                 <!-- 棚: 削除ボタン -->
+        				@can('webmastar')
                                 <td>
                                 <form action="{{ url('display/'.$display->id) }}" method="POST">
                                      {{ csrf_field() }}
@@ -228,6 +231,7 @@
                                     </button>
                                 </form>
                                 </td>
+                        @endcan
                             </tr>
                         @endforeach
                     </tbody>
