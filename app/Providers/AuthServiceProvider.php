@@ -31,7 +31,7 @@ class AuthServiceProvider extends ServiceProvider
         });
         // 'editar'ゲートを定義
         // ユーザーIDが  2 のユーザーを編集者とする
-        Gate::define('editar', function ($user) {
+        Gate::define('editor', function ($user) {
             return ($user->id == 2);
         });
     }

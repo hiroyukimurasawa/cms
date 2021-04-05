@@ -15,12 +15,12 @@
         @endcan
         <div class="form-group">
             <label for="display_img"><img src="/upload/{{$display->display_img}}" ></label>
-        @can('editar')
+        @can('editor')
             <input type="file" id="display_img" name="display_img" class="form-control" value="{{$display->display_img}}">
         @endcan
         </div>
         <!-- Saveボタン/Backボタン -->
-        @can('editar')
+        @can('editor')
         <div class="well well-sm">
 
             <button type="submit" class="btn btn-primary">更新</button>
