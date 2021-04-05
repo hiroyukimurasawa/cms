@@ -12,7 +12,7 @@
            <input type="text" id="display_name" name="display_name" class="form-control" value="{{$display->display_name}}">
         </div>
         <div class="form-group">
-            <label for="display_img"><img src="/upload/{{$display->display_img}}" width="200"></label> 
+            <label for="display_img"><img src="/upload/{{$display->display_img}}" ></label> 
             <input type="file" id="display_img" name="display_img" class="form-control" value="{{$display->display_img}}">
         </div>
         <!-- Saveボタン/Backボタン -->

@@ -49993,6 +49993,9 @@ function display8Click(){
 function display9Click(){
   document.getElementById("display9").click();
 }
+function display10Click(){
+  document.getElementById("display10").click();
+}
 function display11Click(){
   document.getElementById("display11").click();
 }
@@ -50017,221 +50020,215 @@ function display17Click(){
 function display18Click(){
   document.getElementById("display18").click();
 }
-function display19Click(){
+function display20Click(){
   document.getElementById("display19").click();
 }
-function display20Click(){
+function display21Click(){
   document.getElementById("display20").click();
 }
-function display21Click(){
+function display22Click(){
   document.getElementById("display21").click();
 }
-function display22Click(){
+function display23Click(){
   document.getElementById("display22").click();
 }
-function display23Click(){
+function display24Click(){
   document.getElementById("display23").click();
 }
-function display24Click(){
+function display25Click(){
   document.getElementById("display24").click();
 }
-function display25Click(){
+function display26Click(){
   document.getElementById("display25").click();
 }
-function display26Click(){
+function display27Click(){
   document.getElementById("display26").click();
 }
-function display27Click(){
+function display28Click(){
   document.getElementById("display27").click();
 }
-function display28Click(){
+function display29Click(){
   document.getElementById("display28").click();
 }
-function display29Click(){
+function display30Click(){
   document.getElementById("display29").click();
 }
-function display30Click(){
+function display31Click(){
   document.getElementById("display30").click();
 }
-function display31Click(){
+function display32Click(){
   document.getElementById("display31").click();
 }
-function display32Click(){
+function display33Click(){
   document.getElementById("display32").click();
 }
-function display33Click(){
+function display34Click(){
   document.getElementById("display33").click();
 }
-function display34Click(){
+function display35Click(){
   document.getElementById("display34").click();
 }
-function display35Click(){
+function display40Click(){
   document.getElementById("display35").click();
 }
-function display36Click(){
+function display41Click(){
   document.getElementById("display36").click();
 }
-function display37Click(){
+function display42Click(){
   document.getElementById("display37").click();
 }
-function display38Click(){
+function display43Click(){
   document.getElementById("display38").click();
 }
-function display39Click(){
+function display44Click(){
   document.getElementById("display39").click();
 }
-function display40Click(){
+function display45Click(){
   document.getElementById("display40").click();
 }
-function display41Click(){
+function display46Click(){
   document.getElementById("display41").click();
 }
-function display42Click(){
+function display47Click(){
   document.getElementById("display42").click();
 }
-function display43Click(){
+function display48Click(){
   document.getElementById("display43").click();
 }
-function display44Click(){
+function display49Click(){
   document.getElementById("display44").click();
 }
-function display45Click(){
+function display50Click(){
   document.getElementById("display45").click();
 }
-function display46Click(){
+function display51Click(){
   document.getElementById("display46").click();
 }
-function display47Click(){
+function display52Click(){
   document.getElementById("display47").click();
 }
-function display48Click(){
+function display53Click(){
   document.getElementById("display48").click();
 }
-function display49Click(){
+function display54Click(){
   document.getElementById("display49").click();
 }
-function display50Click(){
+function display55Click(){
   document.getElementById("display50").click();
 }
-function display51Click(){
+function display56Click(){
   document.getElementById("display51").click();
 }
-function display52Click(){
+function display57Click(){
   document.getElementById("display52").click();
 }
-function display53Click(){
+function display58Click(){
   document.getElementById("display53").click();
 }
-function display54Click(){
+function display59Click(){
   document.getElementById("display54").click();
 }
-function display55Click(){
+function display60Click(){
   document.getElementById("display55").click();
 }
-function display56Click(){
+function display61Click(){
   document.getElementById("display56").click();
 }
-function display57Click(){
+function display62Click(){
   document.getElementById("display57").click();
 }
-function display58Click(){
+function display63Click(){
   document.getElementById("display58").click();
 }
-function display59Click(){
+function display64Click(){
   document.getElementById("display59").click();
 }
-function display60Click(){
+function display65Click(){
   document.getElementById("display60").click();
 }
-function display61Click(){
+function display70Click(){
   document.getElementById("display61").click();
 }
-function display62Click(){
+function display71Click(){
   document.getElementById("display62").click();
 }
-function display63Click(){
+function display72Click(){
   document.getElementById("display63").click();
 }
-function display64Click(){
+function display80Click(){
   document.getElementById("display64").click();
 }
-function display65Click(){
+function display81Click(){
   document.getElementById("display65").click();
 }
-function display66Click(){
+function display82Click(){
   document.getElementById("display66").click();
 }
-function display67Click(){
+function display83Click(){
   document.getElementById("display67").click();
 }
-function display68Click(){
+function display84Click(){
   document.getElementById("display68").click();
 }
-function display69Click(){
+function display85Click(){
   document.getElementById("display69").click();
 }
-function display70Click(){
+function display86Click(){
   document.getElementById("display70").click();
 }
-function display71Click(){
+function display87Click(){
   document.getElementById("display71").click();
 }
-function display72Click(){
+function display88Click(){
   document.getElementById("display72").click();
 }
-function display73Click(){
+function display89Click(){
   document.getElementById("display73").click();
 }
-function display74Click(){
+function display90Click(){
   document.getElementById("display74").click();
 }
-function display75Click(){
+function display888Click(){
   document.getElementById("display75").click();
 }
-function display76Click(){
+function display889Click(){
   document.getElementById("display76").click();
 }
-function display77Click(){
+function display890Click(){
   document.getElementById("display77").click();
 }
-function display78Click(){
+function display891Click(){
   document.getElementById("display78").click();
 }
-function display79Click(){
+function display892Click(){
   document.getElementById("display79").click();
 }
-function display80Click(){
+function display893Click(){
   document.getElementById("display80").click();
 }
-function display81Click(){
+function display894Click(){
   document.getElementById("display81").click();
 }
-function display82Click(){
+function display895Click(){
   document.getElementById("display82").click();
 }
-function display83Click(){
+function display896Click(){
   document.getElementById("display83").click();
 }
-function display84Click(){
+function display897Click(){
   document.getElementById("display84").click();
 }
-function display85Click(){
+function display898Click(){
   document.getElementById("display85").click();
 }
-function display86Click(){
+function display899Click(){
   document.getElementById("display86").click();
 }
-function display87Click(){
+function display900Click(){
   document.getElementById("display87").click();
 }
-function display88Click(){
+function display901Click(){
   document.getElementById("display88").click();
-}
-function display89Click(){
-  document.getElementById("display89").click();
-}
-function display90Click(){
-  document.getElementById("display90").click();
 }
 
 (function() {
