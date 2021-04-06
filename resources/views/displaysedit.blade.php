@@ -7,7 +7,7 @@
     <form enctype="multipart/form-data" action="{{ url('displays/update') }}" method="POST">
 
         <!-- display_name -->
-        @can('webmastar')
+        @can('editor')
         <div class="form-group">
            <label for="display_name">棚の名前</label>
            <input type="text" id="display_name" name="display_name" class="form-control" value="{{$display->display_name}}">
