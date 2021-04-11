@@ -1,6 +1,7 @@
 <!-- resources/views/displays.blade.php -->
 @extends('layouts.app')
 @section('content')
+<script src="{{ asset('js/display.js') }}"></script>
     <!-- Bootstrapの定形コード… -->
     <div class="card-body">
         <div class="card-title">
