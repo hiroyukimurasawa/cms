@@ -49970,7 +49970,7 @@ document.addEventListener('DOMContentLoaded',function(){
   for(var i = 0; i < dspbtns.length; i++){
       dspbtns[i].addEventListener('click',function(){
       var id =  $(this).attr("id");
-
+alert(id);
           if (id == 'dsp1') {
             $('#display1').trigger('click');
           };
