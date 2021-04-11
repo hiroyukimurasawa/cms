@@ -41,137 +41,139 @@
             </div>
         </form>
     @endcan
-<table>
-	<tbody>
+<div class="container">
+	<div class="table-responsive">
+		<table class=”table”>
+		<tbody>
 		<tr>
 			<td></td>
 			<td></td>
 			<td></td>
-			<td><button id="dsp14" class="dspbtn">014</button></td>
-			<td><button id="dsp13" class="dspbtn">013</button></td>
-			<td><button id="dsp12" class="dspbtn">012</button></td>
-			<td><button id="dsp11" class="dspbtn">011</button></td>
-			<td><button id="dsp10" class="dspbtn">010</button></td>
-			<td><button id="dsp9" class="dspbtn">009</button></td>
-			<td><button id="dsp8" class="dspbtn">008</button></td>
-			<td><button id="dsp7" class="dspbtn">007</button></td>
-			<td><button id="dsp6" class="dspbtn">006</button></td>
-			<td><button id="dsp5" class="dspbtn">005</button></td>
-			<td><button id="dsp4" class="dspbtn">004</button></td>
-			<td><button id="dsp3" class="dspbtn">003</button></td>
-			<td><button id="dsp2" class="dspbtn">002</button></td>
-			<td><button id="dsp1" class="dspbtn">001</button></td>
+			<td><button id="dsp14" class="dspbtn btn btn-link">014</button></td>
+			<td><button id="dsp13" class="dspbtn btn btn-link">013</button></td>
+			<td><button id="dsp12" class="dspbtn btn btn-link">012</button></td>
+			<td><button id="dsp11" class="dspbtn btn btn-link">011</button></td>
+			<td><button id="dsp10" class="dspbtn btn btn-link">010</button></td>
+			<td><button id="dsp9" class="dspbtn btn btn-link">009</button></td>
+			<td><button id="dsp8" class="dspbtn btn btn-link">008</button></td>
+			<td><button id="dsp7" class="dspbtn btn btn-link">007</button></td>
+			<td><button id="dsp6" class="dspbtn btn btn-link">006</button></td>
+			<td><button id="dsp5" class="dspbtn btn btn-link">005</button></td>
+			<td><button id="dsp4" class="dspbtn btn btn-link">004</button></td>
+			<td><button id="dsp3" class="dspbtn btn btn-link">003</button></td>
+			<td><button id="dsp2" class="dspbtn btn btn-link">002</button></td>
+			<td><button id="dsp1" class="dspbtn btn btn-link">001</button></td>
 			<td></td>
 		</tr>
 		<tr>
 			<td></td></td>
 			<td rowspan="10"></td>
-			<td><button id="dsp898" class="dspbtn">898</button></td>
+			<td><button id="dsp898" class="dspbtn btn btn-link">898</button></td>
 			<td colspan="4"></td>
-			<td><button id="dsp894" class="dspbtn">894</button></td>
+			<td><button id="dsp894" class="dspbtn btn btn-link">894</button></td>
 			<td colspan="2" rowspan="10"></td>
-			<td><button id="dsp890" class="dspbtn">890</button></td>
+			<td><button id="dsp890" class="dspbtn btn btn-link">890</button></td>
 			<td colspan="4"></td>
-			<td><button id="dsp888" class="dspbtn">888</button></td>
+			<td><button id="dsp888" class="dspbtn btn btn-link">888</button></td>
 			<td rowspan="11"></td>
-			<td><button id="dsp80" class="dspbtn">080</button></td>
+			<td><button id="dsp80" class="dspbtn btn btn-link">080</button></td>
 		</tr>
 		<tr>
 			<td></td>
-			<td colspan="3" rowspan="3"><button id="dsp33" class="dspbtn">033</button></td>
-			<td><button id="dsp32" class="dspbtn">032</button></td>
-			<td><button id="dsp31" class="dspbtn">031</button></td>
-			<td rowspan="3"><button id="dsp30">030</button></td>
-			<td rowspan="3"><button id="dsp25">025</button></td>
-			<td><button id="dsp24" class="dspbtn">024</button></td>
-			<td><button id="dsp23" class="dspbtn">023</button></td>
-			<td><button id="dsp22" class="dspbtn">022</button></td>
-			<td><button id="dsp21" class="dspbtn">021</button></td>
-			<td rowspan="3"><button id="dsp20">020</button></td>
-			<td><button id="dsp81" class="dspbtn">081</button></td>
+			<td colspan="3" rowspan="3"><button id="dsp33" class="dspbtn btn btn-link">033</button></td>
+			<td><button id="dsp32" class="dspbtn btn btn-link">032</button></td>
+			<td><button id="dsp31" class="dspbtn btn btn-link">031</button></td>
+			<td rowspan="3"><button id="dsp30" class="dspbtn btn btn-link">030</button></td>
+			<td rowspan="3"><button id="dsp25" class="dspbtn btn btn-link">025</button></td>
+			<td><button id="dsp24" class="dspbtn btn btn-link">024</button></td>
+			<td><button id="dsp23" class="dspbtn btn btn-link">023</button></td>
+			<td><button id="dsp22" class="dspbtn btn btn-link">022</button></td>
+			<td><button id="dsp21" class="dspbtn btn btn-link">021</button></td>
+			<td rowspan="3"><button id="dsp20" class="dspbtn btn btn-link">020</button></td>
+			<td><button id="dsp81" class="dspbtn btn btn-link">081</button></td>
 		</tr>
 		<tr>
-			<td><button id="dsp60" class="dspbtn">060</button></td>
+			<td><button id="dsp60" class="dspbtn btn btn-link">060</button></td>
 			<td colspan="2"></td>
 			<td colspan="4"></td>
-			<td><button id="dsp82" class="dspbtn">082</button></td>
+			<td><button id="dsp82" class="dspbtn btn btn-link">082</button></td>
 		</tr>
 		<tr>
-			<td><button id="dsp61" class="dspbtn">061</button></td>
-			<td><button id="dsp34" class="dspbtn">034</button></td>
-			<td><button id="dsp35" class="dspbtn">035</button></td>
-			<td><button id="dsp26" class="dspbtn">026</button></td>
-			<td><button id="dsp27" class="dspbtn">027</button></td>
-			<td><button id="dsp28" class="dspbtn">028</button></td>
-			<td><button id="dsp29" class="dspbtn">029</button></td>
-			<td><button id="dsp83" class="dspbtn">083</button></td>
+			<td><button id="dsp61" class="dspbtn btn btn-link">061</button></td>
+			<td><button id="dsp34" class="dspbtn btn btn-link">034</button></td>
+			<td><button id="dsp35" class="dspbtn btn btn-link">035</button></td>
+			<td><button id="dsp26" class="dspbtn btn btn-link">026</button></td>
+			<td><button id="dsp27" class="dspbtn btn btn-link">027</button></td>
+			<td><button id="dsp28" class="dspbtn btn btn-link">028</button></td>
+			<td><button id="dsp29" class="dspbtn btn btn-link">029</button></td>
+			<td><button id="dsp83" class="dspbtn btn btn-link">083</button></td>
 		</tr>
 		<tr>
-			<td><button id="dsp62" class="dspbtn">062</button></td>
-			<td><button id="dsp899" class="dspbtn">899</button></td>
+			<td><button id="dsp62" class="dspbtn btn btn-link">062</button></td>
+			<td><button id="dsp899" class="dspbtn btn btn-link">899</button></td>
 			<td colspan="4" rowspan="2"></td>
-			<td><button id="dsp895" class="dspbtn">895</button></td>
-			<td><button id="dsp891" class="dspbtn">891</button></td>
+			<td><button id="dsp895" class="dspbtn btn btn-link">895</button></td>
+			<td><button id="dsp891" class="dspbtn btn btn-link">891</button></td>
 			<td colspan="5" rowspan="2"></td>
-			<td><button id="dsp84" class="dspbtn">084</button></td>
+			<td><button id="dsp84" class="dspbtn btn btn-link">084</button></td>
 		</tr>
 		<tr>
-			<td><button id="dsp63" class="dspbtn">063</button></td>
-			<td><button id="dsp900" class="dspbtn">900</button></td>
-			<td><button id="dsp896" class="dspbtn">896</button></td>
-			<td><button id="dsp892" class="dspbtn">892</button></td>
-			<td><button id="dsp85" class="dspbtn">085</button></td>
+			<td><button id="dsp63" class="dspbtn btn btn-link">063</button></td>
+			<td><button id="dsp900" class="dspbtn btn btn-link">900</button></td>
+			<td><button id="dsp896" class="dspbtn btn btn-link">896</button></td>
+			<td><button id="dsp892" class="dspbtn btn btn-link">892</button></td>
+			<td><button id="dsp85" class="dspbtn btn btn-link">085</button></td>
 		</tr>
 		<tr>
-			<td><button id="dsp64" class="dspbtn">064</button></td>
-			<td rowspan="3"><button id="dsp55" class="dspbtn">055</button></td>
-			<td><button id="dsp54" class="dspbtn">054</button></td>
-			<td><button id="dsp53" class="dspbtn">053</button></td>
-			<td><button id="dsp52" class="dspbtn">052</button></td>
-			<td><button id="dsp51" class="dspbtn">051</button></td>
-			<td rowspan="3"><button id="dsp50" class="dspbtn">050</button></td>
-			<td rowspan="3"><button id="dsp45" class="dspbtn">045</button></td>
-			<td><button id="dsp44" class="dspbtn">044</button></td>
-			<td><button id="dsp43" class="dspbtn">043</button></td>
-			<td><button id="dsp42" class="dspbtn">042</button></td>
-			<td><button id="dsp41" class="dspbtn">041</button></td>
-			<td rowspan="3"><button id="dsp40" class="dspbtn">040</button></td>
-			<td><button id="dsp86" class="dspbtn">086</button></td>
+			<td><button id="dsp64" class="dspbtn btn btn-link">064</button></td>
+			<td rowspan="3"><button id="dsp55" class="dspbtn btn btn-link">055</button></td>
+			<td><button id="dsp54" class="dspbtn btn btn-link">054</button></td>
+			<td><button id="dsp53" class="dspbtn btn btn-link">053</button></td>
+			<td><button id="dsp52" class="dspbtn btn btn-link">052</button></td>
+			<td><button id="dsp51" class="dspbtn btn btn-link">051</button></td>
+			<td rowspan="3"><button id="dsp50" class="dspbtn btn btn-link">050</button></td>
+			<td rowspan="3"><button id="dsp45" class="dspbtn btn btn-link">045</button></td>
+			<td><button id="dsp44" class="dspbtn btn btn-link">044</button></td>
+			<td><button id="dsp43" class="dspbtn btn btn-link">043</button></td>
+			<td><button id="dsp42" class="dspbtn btn btn-link">042</button></td>
+			<td><button id="dsp41" class="dspbtn btn btn-link">041</button></td>
+			<td rowspan="3"><button id="dsp40" class="dspbtn btn btn-link">040</button></td>
+			<td><button id="dsp86" class="dspbtn btn btn-link">086</button></td>
 		</tr>
 		<tr>
-			<td><button id="dsp65" class="dspbtn">065</button></td>
+			<td><button id="dsp65" class="dspbtn btn btn-link">065</button></td>
 			<td colspan="4"></td>
 			<td colspan="4"></td>
-			<td><button id="dsp87" class="dspbtn">087</button></td>
+			<td><button id="dsp87" class="dspbtn btn btn-link">087</button></td>
 		</tr>
 		<tr>
 			<td></td>
-			<td><button id="dsp56" class="dspbtn">056</button></td>
-			<td><button id="dsp57" class="dspbtn">057</button></td>
-			<td><button id="dsp58" class="dspbtn">058</button></td>
-			<td><button id="dsp59" class="dspbtn">059</button></td>
-			<td><button id="dsp46" class="dspbtn">046</button></td>
-			<td><button id="dsp47" class="dspbtn">047</button></td>
-			<td><button id="dsp48" class="dspbtn">048</button></td>
-			<td><button id="dsp49" class="dspbtn">049</button></td>
-			<td><button id="dsp88" class="dspbtn">088</button></td>
+			<td><button id="dsp56" class="dspbtn btn btn-link">056</button></td>
+			<td><button id="dsp57" class="dspbtn btn btn-link">057</button></td>
+			<td><button id="dsp58" class="dspbtn btn btn-link">058</button></td>
+			<td><button id="dsp59" class="dspbtn btn btn-link">059</button></td>
+			<td><button id="dsp46" class="dspbtn btn btn-link">046</button></td>
+			<td><button id="dsp47" class="dspbtn btn btn-link">047</button></td>
+			<td><button id="dsp48" class="dspbtn btn btn-link">048</button></td>
+			<td><button id="dsp49" class="dspbtn btn btn-link">049</button></td>
+			<td><button id="dsp88" class="dspbtn btn btn-link">088</button></td>
 		</tr>
 		<tr>
 			<td></td>
-			<td><button id="dsp901" class="dspbtn">901</button></td>
+			<td><button id="dsp901" class="dspbtn btn btn-link">901</button></td>
 			<td colspan="4"></td>
-			<td><button id="dsp897" class="dspbtn">897</button></td>
-			<td><button id="dsp893" class="dspbtn">893</button></td>
+			<td><button id="dsp897" class="dspbtn btn btn-link">897</button></td>
+			<td><button id="dsp893" class="dspbtn btn btn-link">893</button></td>
 			<td colspan="4"></td>
-			<td><button id="dsp889" class="dspbtn">889</button></td>
-			<td><button id="dsp89" class="dspbtn">089</button></td>
+			<td><button id="dsp889" class="dspbtn btn btn-link">889</button></td>
+			<td><button id="dsp89" class="dspbtn btn btn-link">089</button></td>
 		</tr>
 		<tr>
 			<td></td>
-			<td><button id="dsp18" class="dspbtn">018</button></td>
-			<td><button id="dsp17" class="dspbtn">017</button></td>
-			<td><button id="dsp16" class="dspbtn">016</button></td>
-			<td><button id="dsp15" class="dspbtn">015</button></td>
+			<td><button id="dsp18" class="dspbtn btn btn-link">018</button></td>
+			<td><button id="dsp17" class="dspbtn btn btn-link">017</button></td>
+			<td><button id="dsp16" class="dspbtn btn btn-link">016</button></td>
+			<td><button id="dsp15" class="dspbtn btn btn-link">015</button></td>
 			<td></td>
 			<td></td>
 			<td></td>
@@ -180,13 +182,15 @@
 			<td></td>
 			<td></td>
 			<td></td>
-			<td><button id="dsp72" class="dspbtn">072</button></td>
-			<td><button id="dsp71" class="dspbtn">071</button></td>
-			<td><button id="dsp70" class="dspbtn">070</button></td>
-			<td><button id="dsp90" class="dspbtn">090</button></td>
+			<td><button id="dsp72" class="dspbtn btn btn-link">072</button></td>
+			<td><button id="dsp71" class="dspbtn btn btn-link">071</button></td>
+			<td><button id="dsp70" class="dspbtn btn btn-link">070</button></td>
+			<td><button id="dsp90" class="dspbtn btn btn-link">090</button></td>
 		</tr>
-	</tbody>
-</table>
+		</tbody>
+		</table>
+	</div>
+</div>
 </div>
      <!-- 現在の棚 -->
     @if (count($displays) > 0)
