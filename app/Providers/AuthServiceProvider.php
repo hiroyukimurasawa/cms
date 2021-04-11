@@ -26,7 +26,7 @@ class AuthServiceProvider extends ServiceProvider
         $this->registerPolicies();
         // 'webmastar'ゲートを定義
         // ユーザーIDが 1 のユーザーを管理者とする
-        Gate::define('webmastar', function ($user) {
+        Gate::define('webmaster', function ($user) {
             return ($user->id == 1);
         });
         // 'editar'ゲートを定義

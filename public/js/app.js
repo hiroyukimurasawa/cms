@@ -49964,272 +49964,83 @@ module.exports = __webpack_require__(/*! /home/ec2-user/environment/cms/resource
 /***/ })
 
 /******/ });
-
 //ボタンをクリックした時の処理
-function display1Click(){
-  document.getElementById("display1").click();
-}
-function display2Click(){
-  document.getElementById("display2").click();
-}
-function display3Click(){
-  document.getElementById("display3").click();
-}
-function display4Click(){
-  document.getElementById("display4").click();
-}
-function display5Click(){
-  document.getElementById("display5").click();
-}
-function display6Click(){
-  document.getElementById("display6").click();
-}
-function display7Click(){
-  document.getElementById("display7").click();
-}
-function display8Click(){
-  document.getElementById("display8").click();
-}
-function display9Click(){
-  document.getElementById("display9").click();
-}
-function display10Click(){
-  document.getElementById("display10").click();
-}
-function display11Click(){
-  document.getElementById("display11").click();
-}
-function display12Click(){
-  document.getElementById("display12").click();
-}
-function display13Click(){
-  document.getElementById("display13").click();
-}
-function display14Click(){
-  document.getElementById("display14").click();
-}
-function display15Click(){
-  document.getElementById("display15").click();
-}
-function display16Click(){
-  document.getElementById("display16").click();
-}
-function display17Click(){
-  document.getElementById("display17").click();
-}
-function display18Click(){
-  document.getElementById("display18").click();
-}
-function display20Click(){
-  document.getElementById("display19").click();
-}
-function display21Click(){
-  document.getElementById("display20").click();
-}
-function display22Click(){
-  document.getElementById("display21").click();
-}
-function display23Click(){
-  document.getElementById("display22").click();
-}
-function display24Click(){
-  document.getElementById("display23").click();
-}
-function display25Click(){
-  document.getElementById("display24").click();
-}
-function display26Click(){
-  document.getElementById("display25").click();
-}
-function display27Click(){
-  document.getElementById("display26").click();
-}
-function display28Click(){
-  document.getElementById("display27").click();
-}
-function display29Click(){
-  document.getElementById("display28").click();
-}
-function display30Click(){
-  document.getElementById("display29").click();
-}
-function display31Click(){
-  document.getElementById("display30").click();
-}
-function display32Click(){
-  document.getElementById("display31").click();
-}
-function display33Click(){
-  document.getElementById("display32").click();
-}
-function display34Click(){
-  document.getElementById("display33").click();
-}
-function display35Click(){
-  document.getElementById("display34").click();
-}
-function display40Click(){
-  document.getElementById("display35").click();
-}
-function display41Click(){
-  document.getElementById("display36").click();
-}
-function display42Click(){
-  document.getElementById("display37").click();
-}
-function display43Click(){
-  document.getElementById("display38").click();
-}
-function display44Click(){
-  document.getElementById("display39").click();
-}
-function display45Click(){
-  document.getElementById("display40").click();
-}
-function display46Click(){
-  document.getElementById("display41").click();
-}
-function display47Click(){
-  document.getElementById("display42").click();
-}
-function display48Click(){
-  document.getElementById("display43").click();
-}
-function display49Click(){
-  document.getElementById("display44").click();
-}
-function display50Click(){
-  document.getElementById("display45").click();
-}
-function display51Click(){
-  document.getElementById("display46").click();
-}
-function display52Click(){
-  document.getElementById("display47").click();
-}
-function display53Click(){
-  document.getElementById("display48").click();
-}
-function display54Click(){
-  document.getElementById("display49").click();
-}
-function display55Click(){
-  document.getElementById("display50").click();
-}
-function display56Click(){
-  document.getElementById("display51").click();
-}
-function display57Click(){
-  document.getElementById("display52").click();
-}
-function display58Click(){
-  document.getElementById("display53").click();
-}
-function display59Click(){
-  document.getElementById("display54").click();
-}
-function display60Click(){
-  document.getElementById("display55").click();
-}
-function display61Click(){
-  document.getElementById("display56").click();
-}
-function display62Click(){
-  document.getElementById("display57").click();
-}
-function display63Click(){
-  document.getElementById("display58").click();
-}
-function display64Click(){
-  document.getElementById("display59").click();
-}
-function display65Click(){
-  document.getElementById("display60").click();
-}
-function display70Click(){
-  document.getElementById("display61").click();
-}
-function display71Click(){
-  document.getElementById("display62").click();
-}
-function display72Click(){
-  document.getElementById("display63").click();
-}
-function display80Click(){
-  document.getElementById("display64").click();
-}
-function display81Click(){
-  document.getElementById("display65").click();
-}
-function display82Click(){
-  document.getElementById("display66").click();
-}
-function display83Click(){
-  document.getElementById("display67").click();
-}
-function display84Click(){
-  document.getElementById("display68").click();
-}
-function display85Click(){
-  document.getElementById("display69").click();
-}
-function display86Click(){
-  document.getElementById("display70").click();
-}
-function display87Click(){
-  document.getElementById("display71").click();
-}
-function display88Click(){
-  document.getElementById("display72").click();
-}
-function display89Click(){
-  document.getElementById("display73").click();
-}
-function display90Click(){
-  document.getElementById("display74").click();
-}
-function display888Click(){
-  document.getElementById("display75").click();
-}
-function display889Click(){
-  document.getElementById("display76").click();
-}
-function display890Click(){
-  document.getElementById("display77").click();
-}
-function display891Click(){
-  document.getElementById("display78").click();
-}
-function display892Click(){
-  document.getElementById("display79").click();
-}
-function display893Click(){
-  document.getElementById("display80").click();
-}
-function display894Click(){
-  document.getElementById("display81").click();
-}
-function display895Click(){
-  document.getElementById("display82").click();
-}
-function display896Click(){
-  document.getElementById("display83").click();
-}
-function display897Click(){
-  document.getElementById("display84").click();
-}
-function display898Click(){
-  document.getElementById("display85").click();
-}
-function display899Click(){
-  document.getElementById("display86").click();
-}
-function display900Click(){
-  document.getElementById("display87").click();
-}
-function display901Click(){
-  document.getElementById("display88").click();
-}
+document.addEventListener('DOMContentLoaded',function(){
+  var dspbtns = document.querySelectorAll('.dspbtn');
+  for(var i = 0; i < dspbtns.length; i++){
+      dspbtns[i].addEventListener('click',function(){
+      var id =  $(this).attr("id");
+
+          if (id == 'dsp1') {
+            $('#display1').trigger('click');
+          };
+          if (id == 'dsp2') {
+            $('#display2').trigger('click');
+          };
+          if (id == 'dsp3') {
+            $('#display3').trigger('click');
+          };
+          if (id == 'dsp4') {
+            $('#display4').trigger('click');
+          };
+          if (id == 'dsp4') {
+            $('#display4').trigger('click');
+          };
+          if (id == 'dsp5') {
+            $('#display5').trigger('click');
+          };
+          if (id == 'dsp6') {
+            $('#display6').trigger('click');
+          };
+          if (id == 'dsp7') {
+            $('#display7').trigger('click');
+          };
+          if (id == 'dsp8') {
+            $('#display8').trigger('click');
+          };
+          if (id == 'dsp9') {
+            $('#display9').trigger('click');
+          };
+          if (id == 'dsp10') {
+            $('#display10').trigger('click');
+          };
+          if (id == 'dsp11') {
+            $('#display11').trigger('click');
+          };
+          if (id == 'dsp12') {
+            $('#display12').trigger('click');
+          };
+          if (id == 'dsp13') {
+            $('#display13').trigger('click');
+          };
+          if (id == 'dsp14') {
+            $('#display14').trigger('click');
+          };
+          if (id == 'dsp15') {
+            $('#display15').trigger('click');
+          };
+          if (id == 'dsp16') {
+            $('#display16').trigger('click');
+          };
+          if (id == 'dsp17') {
+            $('#display17').trigger('click');
+          };
+          if (id == 'dsp18') {
+            $('#display18').trigger('click');
+          };
+          if (id == 'dsp20') {
+            $('#display19').trigger('click');
+          };
+          if (id == 'dsp21') {
+            $('#display20').trigger('click');
+          };
+          if (id == 'dsp22') {
+            $('#display21').trigger('click');
+          };
+
+      },false);
+  }
+},false);
 
 (function() {
     'use strict';
