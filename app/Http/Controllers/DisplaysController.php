@@ -40,7 +40,7 @@ class DisplaysController extends Controller
         $displays->display_img;
         $displays->save();
         //ファイルアップロード
-        $request->file('display_img')->storeAs('public/display_img', $displays->id.'.'.$request->display_img->extension());
+        $request->file('display_img')->storeAs('public', $displays->id.'.'.$request->display_img->extension());
         // ”msg_success”に名前を変える
         session()->flash('msg_success', '登録が完了しました');
         return redirect('/');
@@ -66,12 +66,12 @@ class DisplaysController extends Controller
         $displays->display_img;
         $displays->save();
         //ファイルアップロード
-        $request->file('display_img')->storeAs('public/display_img', $displays->id.'.'.$request->display_img->extension());
+        $request->file('display_img')->storeAs('public', $displays->id.'.'.$request->display_img->extension());
         if($request->file('display_img')){
             $files = Storage::allfiles($displays->id);
             Storage::delete($files);
             $path=$request->file('display_img')->storePublicly($displays->id);
-            $displays->display_img=asset('/storage/display_img').'/'.$path;
+            $displays->display_img=asset('/storage').'/'.$path;
         }
     // ”msg_success”に名前を変える
     session()->flash('msg_success', '更新が完了しました');
