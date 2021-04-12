@@ -34,19 +34,13 @@ class DisplaysController extends Controller
         }
         //以下に登録処理を記述（Eloquentモデル)
             # データ登録処理の上に記述しておくこと
-    //ファイルアップロード
-    $file = $request->file('display_img'); //file取得
-    if( !empty($file) ){                //fileが空かチェック
-        $filename = $file->getClientOriginalName();  //ファイル名を取得
-        $move = $file->move('./upload/',$filename);  //ファイルを移動：パスが“./upload/”の場合もあるCloud9
-    }else{
-        $filename = "";
-    }  
         // Eloquentモデル
         $displays = new Display;
         $displays->display_name = $request->display_name;
-        $displays->display_img  = $filename;
-        $displays->save(); 
+        $displays->display_img;
+        $displays->save();
+        //ファイルアップロード
+        $request->file('display_img')->storeAs('public/display_img', $displays->id.'.'.$request->display_img->extension());
         // ”msg_success”に名前を変える
         session()->flash('msg_success', '登録が完了しました');
         return redirect('/');
@@ -58,7 +52,7 @@ class DisplaysController extends Controller
             $validator = Validator::make($request->all(), [
                 'id' => 'required',
                 'display_name' => 'required|min:3|max:255',
-                'display_img'  => 'file|image|mimes:jpeg,png,jpg',    
+                'display_img'  => 'file|image|mimes:jpg',    
         ]);
         //バリデーション:エラー
             if ($validator->fails()) {
@@ -66,24 +60,23 @@ class DisplaysController extends Controller
                     ->withInput()
                     ->withErrors($validator);
         }
-    //ファイルアップロード
-    $file = $request->file('display_img'); //file取得
-    if( !empty($file) ){                   //fileが空かチェック
-        $filename = $file->getClientOriginalName(); //ファイル名を取得
-        $move = $file->move('./upload/',$filename); //ファイルを移動：パスが“./upload/”の場合もあるCloud9
-    }else{
-        $filename = "";
-    } 
         //データ更新
         $displays = display::find($request->id);
         $displays->display_name = $request->display_name;
-        $displays->display_img  = $filename;
+        $displays->display_img;
         $displays->save();
+        //ファイルアップロード
+        $request->file('display_img')->storeAs('public/display_img', $displays->id.'.'.$request->display_img->extension());
+        if($request->file('display_img')){
+            $files = Storage::allfiles($displays->id);
+            Storage::delete($files);
+            $path=$request->file('display_img')->storePublicly($displays->id);
+            $displays->display_img=asset('/storage/display_img').'/'.$path;
+        }
     // ”msg_success”に名前を変える
     session()->flash('msg_success', '更新が完了しました');
     return redirect('/');
     }
-
     //更新画面
     public function edit(Display $displays){
         //{displays}id 値を取得 => Display $displays id 値の1レコード取得
