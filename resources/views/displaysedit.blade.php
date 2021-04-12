@@ -14,7 +14,7 @@
         </div>
         @endcan
         <div class="form-group">
-            <label for="display_img"><img src="public/storage/{{$display->id}}.jpg" ></label>
+            <label for="display_img"><img src="storage/{{$display->display_img}}" ></label>
         @can('editor')
             <input type="file" id="display_img" name="display_img" class="form-control" value="{{$display->display_img}}">
         @endcan
