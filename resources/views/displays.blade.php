@@ -210,7 +210,7 @@
                             <tr>
                                 <!-- 棚タイトル -->
                                 <td class="table-text">
-                                <div><img src="/storage/{{$display->id}}.jpg" width="100"></div>
+                                <div><img src="public/storage/{{$display->id}}.jpg" width="100"></div>
                                     <div>{{ $display->display_name }}</div>
                                 </td>
 				                <!-- 商品タイトル -->

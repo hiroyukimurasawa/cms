@@ -71,7 +71,7 @@ class DisplaysController extends Controller
             $files = Storage::allfiles($displays->id);
             Storage::delete($files);
             $path=$request->file('display_img')->storePublicly($displays->id);
-            $displays->display_img=asset('/storage').'/'.$path;
+            $displays->display_img=asset('storage').'/'.$path;
         }
     // ”msg_success”に名前を変える
     session()->flash('msg_success', '更新が完了しました');
