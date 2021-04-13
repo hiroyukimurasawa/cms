@@ -75,21 +75,19 @@
             </div>
         </nav>
         <!-- フラッシュメッセージ -->
-        <script type="text/javascript">
-            // {{--成功時--}}
-            @if (session('msg_success'))
-                $(function () {
-                    toastr.success('{{ session('msg_success') }}');
-                });
-            @endif
+             {{--成功時--}}
+        @if (session('msg_success'))
+            <div class="flash_message bg-success text-center py-3 my-0" style="display: inline-block;">
+                {{ session('msg_success') }}
+            </div>
+        @endif
+             {{--失敗時--}}
+        @if (session('msg_danger'))
+            <div class="flash_message bg-danger text-center py-3 my-0">
+                {{ session('msg_danger') }}
+            </div>
+        @endif
 
-            // {{--失敗時--}}
-            @if (session('msg_danger'))
-                $(function () {
-                    toastr.danger('{{ session('msg_danger') }}');
-                });
-            @endif
-        </script>
         <main class="py-4">
             @yield('content')
         </main>
