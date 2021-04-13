@@ -206,18 +206,16 @@
 
                     <tbody>
                         @foreach ($displays as $key=>$display)
-                        
                             <tr>
                                 <!-- 棚タイトル -->
                                 <td class="table-text">
-                                <div><img src="/storage/{{$display->id}}.jpg?<?php echo date("YmdHis");?>" width="100" ></div>
+                                <div><img src="/storage/{{$display->id}}.jpg?<?php echo date("YmdHis");?>" width="100" /></div>
                                     <div>{{ $display->display_name }}</div>
                                 </td>
 				                <!-- 商品タイトル -->
 
                                 <!-- 棚: 更新ボタン -->
                                 <td>
-                                
                                     <form action="{{ url('displaysedit/'.$display->id) }}" method="POST">
                                         {{ csrf_field() }}
                                         <button type="submit" id="display{{$key+1}}" class="btn btn-primary">
