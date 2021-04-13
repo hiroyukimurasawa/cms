@@ -209,9 +209,9 @@
                             <tr>
                                 <!-- 棚タイトル -->
                                 <td class="table-text">
-                                <div>@if(file_exists(public_path().'/storage/'. $display->id .'.jpg'))
+                                <div>@if(file_exists('/storage/.'public_path(). $display->id .'.jpg'))
                                         <img src="/storage/{{$display->id}}.jpg?<?php echo date("YmdHis");?>" width="100" />
-                                  @elseif(file_exists(public_path().'/storage/post_img/'. $display->id .'.jpeg'))
+                                  @elseif(file_exists('/storage/'.public_path(). $display->id .'.jpeg'))
                                       <img src="/storage/{{$display->id}}.jpeg?<?php echo date("YmdHis");?>" width="100" />
                                   @endif</div>
                                     <div>{{ $display->display_name }}</div>
