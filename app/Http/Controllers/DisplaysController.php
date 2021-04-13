@@ -23,9 +23,9 @@ class DisplaysController extends Controller
         //バリデーション
         $validator = Validator::make($request->all(), [
             'display_name' => 'required|max:255',
-            'display_img'  => 'file|image|mimes:jpeg,png,jpg',
-            'kinds_item'   => 'min:3|max:255',
-            'items_amount' => 'min:3|max:255',
+            'display_img'  => 'file|image|mimes:jpeg,jpg',
+            'kinds_item'   => 'nullable',
+            'items_amount' => 'nullable',
         ]);
     
         //バリデーション:エラー 
@@ -56,9 +56,9 @@ class DisplaysController extends Controller
             $validator = Validator::make($request->all(), [
                 'id' => 'required',
                 'display_name' => 'required|min:3|max:255',
-                'display_img'  => 'required|file|image|mimes:jpg',
-                'kinds_item'   => 'min:3|max:255',
-                'items_amount' => 'min:3|max:255',
+                'display_img'  => 'required|file|image|mimes:jpg,jpeg',
+                'kinds_item'   => 'nullable',
+                'items_amount' => 'nullable',
         ]);
         //バリデーション:エラー
             if ($validator->fails()) {

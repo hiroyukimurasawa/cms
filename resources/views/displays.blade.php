@@ -209,7 +209,11 @@
                             <tr>
                                 <!-- 棚タイトル -->
                                 <td class="table-text">
-                                <div><img src="/storage/{{$display->id}}.jpg?<?php echo date("YmdHis");?>" width="100" /></div>
+                                <div>@if(file_exists(public_path().'/storage/'. $display->id .'.jpg'))
+                                        <img src="/storage/{{$display->id}}.jpg?<?php echo date("YmdHis");?>" width="100" />
+                                  @elseif(file_exists(public_path().'/storage/post_img/'. $display->id .'.jpeg'))
+                                      <img src="/storage/{{$display->id}}.jpeg?<?php echo date("YmdHis");?>" width="100" />
+                                  @endif</div>
                                     <div>{{ $display->display_name }}</div>
                                 </td>
 				                <!-- 商品種 -->
