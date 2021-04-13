@@ -23,7 +23,7 @@ class DisplaysController extends Controller
         //バリデーション
         $validator = Validator::make($request->all(), [
             'display_name' => 'required|max:255',
-            'display_img'  => 'file|image|mimes:jpeg,jpg',
+            'display_img'  => 'required|file|image|mimes:jpeg,jpg',
             'kinds_item'   => 'nullable',
             'items_amount' => 'nullable',
         ]);
