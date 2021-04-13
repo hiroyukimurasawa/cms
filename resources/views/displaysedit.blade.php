@@ -15,12 +15,8 @@
         </div>
         @endcan
         <div class="form-group">
-            <label for="display_img">
-                @if(file_exists(public_path().'/storage/'. $display->id .'.jpg'))
-                    <img id="img_prv" src="/storage/{{$display->id}}.jpg?<?php echo date("YmdHis");?>" width="320" height="480" />
-                  @elseif(file_exists(public_path().'/storage/'. $display->id .'.jpeg'))
-                      <img id="img_prv" src="/storage/{{$display->id}}.jpeg?<?php echo date("YmdHis");?>" width="320" height="480" />
-                  @endif
+            <label for="display_img"><img src="/storage/{{$display->id}}.jpg?<?php echo date("YmdHis");?>" width="320" height="480" />
+            </label>
         @can('editor')
             <input type="file" id="display_img" name="display_img" class="form-control " value="{{$display->display_img}}">
         @endcan

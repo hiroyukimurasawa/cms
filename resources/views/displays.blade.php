@@ -5,7 +5,7 @@
     <!-- Bootstrapの定形コード… -->
     <div class="card-body">
         <div class="card-title">
-            札幌富丘3条店
+            棚の名前
         </div>
         
         <!-- バリデーションエラーの表示に使用-->
@@ -209,27 +209,20 @@
                             <tr>
                                 <!-- 棚タイトル -->
                                 <td class="table-text">
-                                <div>@if(file_exists('/storage/.'public_path(). $display->id .'.jpg'))
-                                        <img src="/storage/{{$display->id}}.jpg?<?php echo date("YmdHis");?>" width="100" />
-                                  @elseif(file_exists('/storage/'.public_path(). $display->id .'.jpeg'))
-                                      <img src="/storage/{{$display->id}}.jpeg?<?php echo date("YmdHis");?>" width="100" />
-                                  @endif</div>
+                                <div><img src="/storage/{{$display->id}}.jpg?<?php echo date("YmdHis");?>" width="100" /></div>
                                     <div>{{ $display->display_name }}</div>
                                 </td>
-				                <!-- 商品種 -->
-				                <td class="table-text">
-									<div>{{ $display->kinds_item }}</div>
-								</td>
+				                <!-- 商品タイトル -->
+
                                 <!-- 棚: 更新ボタン -->
                                 <td>
                                     <form action="{{ url('displaysedit/'.$display->id) }}" method="POST">
                                         {{ csrf_field() }}
                                         <button type="submit" id="display{{$key+1}}" class="btn btn-primary">
-                                            <i class="glyphicon glyphicon-pencil"></i> {{$key+1}} 閲覧 更新
+                                            <i class="glyphicon glyphicon-pencil"></i> {{$key+1}} 更新
                                         </button>
                                     </form>
                                 </td>
-                                <td>{{ $display->updated_at}}</td>
                                 <!-- 棚: 削除ボタン -->
         				@can('webmaster')
                                 <td>
