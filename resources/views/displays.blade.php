@@ -209,8 +209,9 @@
                             <tr>
                                 <!-- 棚タイトル -->
                                 <td class="table-text">
+                            	<div>{{ $display->display_name }}</div>
                                 <div><img src="/storage/{{$display->id}}.jpg?<?php echo date("YmdHis");?>" width="100" /></div>
-                                    <div>{{ $display->display_name }}</div>
+
                                 </td>
 				                <!-- 商品タイトル -->
 
