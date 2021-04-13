@@ -152,10 +152,10 @@
 			<td><button id="dsp57" class="dspbtn btn btn-link">057</button></td>
 			<td><button id="dsp58" class="dspbtn btn btn-link">058</button></td>
 			<td><button id="dsp59" class="dspbtn btn btn-link">059</button></td>
-			<td><button id="dsp46" class="dspbtn btn btn-link">066</button></td>
-			<td><button id="dsp47" class="dspbtn btn btn-link">067</button></td>
-			<td><button id="dsp48" class="dspbtn btn btn-link">068</button></td>
-			<td><button id="dsp49" class="dspbtn btn btn-link">069</button></td>
+			<td><button id="dsp66" class="dspbtn btn btn-link">066</button></td>
+			<td><button id="dsp67" class="dspbtn btn btn-link">067</button></td>
+			<td><button id="dsp68" class="dspbtn btn btn-link">068</button></td>
+			<td><button id="dsp69" class="dspbtn btn btn-link">069</button></td>
 			<td><button id="dsp78" class="dspbtn btn btn-link">078</button></td>
 		</tr>
 		<tr>
@@ -214,7 +214,8 @@
 
                                 </td>
 				                <!-- 商品タイトル -->
-
+				                <td><div>{{ $display->kinds_item }}</div></td>
+								<td>updated:{{ $display->updated_at}}</td>
                                 <!-- 棚: 更新ボタン -->
                                 <td>
                                     <form action="{{ url('displaysedit/'.$display->id) }}" method="POST">
