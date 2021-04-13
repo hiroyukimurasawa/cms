@@ -5,7 +5,7 @@
     <!-- Bootstrapの定形コード… -->
     <div class="card-body">
         <div class="card-title">
-            棚の名前
+            札幌富丘3条店
         </div>
         
         <!-- バリデーションエラーの表示に使用-->
@@ -212,8 +212,10 @@
                                 <div><img src="/storage/{{$display->id}}.jpg?<?php echo date("YmdHis");?>" width="100" /></div>
                                     <div>{{ $display->display_name }}</div>
                                 </td>
-				                <!-- 商品タイトル -->
-
+				                <!-- 商品種 -->
+				                <td class="table-text">
+									<div>{{ $display->kinds_item }}</div>
+								</td>
                                 <!-- 棚: 更新ボタン -->
                                 <td>
                                     <form action="{{ url('displaysedit/'.$display->id) }}" method="POST">
@@ -223,6 +225,7 @@
                                         </button>
                                     </form>
                                 </td>
+                                <td>{{ $display->updated_at}}</td>
                                 <!-- 棚: 削除ボタン -->
         				@can('webmaster')
                                 <td>

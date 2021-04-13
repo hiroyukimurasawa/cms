@@ -20,6 +20,15 @@
             <input type="file" id="display_img" name="display_img" class="form-control " value="{{$display->display_img}}">
         @endcan
         </div>
+        <div class="form-group">
+           <label for="kinds_item">棚にある商品種等</label>
+           <input type="text" id="kinds_item" name="kinds_item" class="form-control" value="{{$display->kinds_item}}">
+        </div>
+        <div class="form-group">
+           <label for="items_amount">商品の数量目安</label>
+           <input type="text" id="items_amount" name="items_amount" class="form-control" value="{{$display->items_amount}}">
+        </div>
+        <td>updated:{{ $display->updated_at}}</td>
         <!-- Saveボタン/Backボタン -->
         @can('editor')
         <div class="well well-sm">

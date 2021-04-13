@@ -24,6 +24,8 @@ class DisplaysController extends Controller
         $validator = Validator::make($request->all(), [
             'display_name' => 'required|max:255',
             'display_img'  => 'file|image|mimes:jpeg,png,jpg',
+            'kinds_item'   => 'min:3|max:255',
+            'items_amount' => 'min:3|max:255',
         ]);
     
         //バリデーション:エラー 
@@ -38,6 +40,8 @@ class DisplaysController extends Controller
         $displays = new Display;
         $displays->display_name = $request->display_name;
         $displays->display_img;
+        $displays->kinds_item   = $request->kinds_item;
+        $displays->items_amount = $request->items_amount;
         $displays->save();
         //ファイルアップロード
         $request->file('display_img')->storeAs('public', $displays->id.'.'.$request->display_img->extension());
@@ -52,7 +56,9 @@ class DisplaysController extends Controller
             $validator = Validator::make($request->all(), [
                 'id' => 'required',
                 'display_name' => 'required|min:3|max:255',
-                'display_img'  => 'required|file|image|mimes:jpg',    
+                'display_img'  => 'required|file|image|mimes:jpg',
+                'kinds_item'   => 'min:3|max:255',
+                'items_amount' => 'min:3|max:255',
         ]);
         //バリデーション:エラー
             if ($validator->fails()) {
@@ -64,6 +70,8 @@ class DisplaysController extends Controller
         $displays = display::find($request->id);
         $displays->display_name = $request->display_name;
         $displays->display_img;
+        $displays->kinds_item   = $request->kinds_item;
+        $displays->items_amount = $request->items_amount;
         $displays->save();
         //ファイルアップロード
         $request->file('display_img')->storeAs('public', $displays->id.'.'.$request->display_img->extension());
