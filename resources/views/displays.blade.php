@@ -62,7 +62,7 @@
 			<td><button id="dsp4" class="dspbtn btn btn-link">004</button></td>
 			<td><button id="dsp3" class="dspbtn btn btn-link">003</button></td>
 			<td><button id="dsp2" class="dspbtn btn btn-link">002</button></td>
-			<td><button id="dsp1" class="dspbtn btn btn-link">001</button></td>
+			<td class="displaymap"><button id="dsp1" class="dspbtn btn btn-link">HOT＆COLD</button></td>
 			<td></td>
 		</tr>
 		<tr>
@@ -221,7 +221,7 @@
                                     <form action="{{ url('displaysedit/'.$display->id) }}" method="POST">
                                         {{ csrf_field() }}
                                         <button type="submit" id="display{{$key+1}}" class="btn btn-primary">
-                                            <i class="glyphicon glyphicon-pencil"></i> {{$key+1}} 更新
+                                            <i class="glyphicon glyphicon-pencil"></i> {{$key+1}} 確認 更新
                                         </button>
                                     </form>
                                 </td>
@@ -245,7 +245,7 @@
         </div>
     @endif
     </div>
-
+<p class="page-top"><a href="#wrap">TOPに戻る</a></p>
     <!-- display: 既に登録されてる棚のリスト -->
 
 @endsection

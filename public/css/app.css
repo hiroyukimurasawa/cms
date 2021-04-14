@@ -10951,3 +10951,29 @@ tr,td{
   	border: 1px solid #595959;
 	  border-collapse: collapse;
 }
+.displaymap {
+    max-width: 55px;
+    overflow: auto;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.page-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 77%;
+}
+.page-top a {
+    background: #666;
+    text-decoration: none;
+    color: #fff;
+    width: 70px;
+    padding: 20px 0;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+}
+.page-top a:hover {
+    text-decoration: none;
+    background: #999;
+}
