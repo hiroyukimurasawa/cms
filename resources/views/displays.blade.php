@@ -62,7 +62,7 @@
 			<td><button id="dsp4" class="dspbtn btn btn-link">004</button></td>
 			<td><button id="dsp3" class="dspbtn btn btn-link">003</button></td>
 			<td><button id="dsp2" class="dspbtn btn btn-link">002</button></td>
-			<td class="displaymap"><button id="dsp1" class="dspbtn btn btn-link">HOT＆COLD</button></td>
+			<td><button id="dsp1" class="dspbtn btn btn-link">001</button></td>
 			<td></td>
 		</tr>
 		<tr>
