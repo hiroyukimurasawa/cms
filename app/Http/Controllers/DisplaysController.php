@@ -72,6 +72,7 @@ class DisplaysController extends Controller
         $displays->display_img;
         $displays->kinds_item   = $request->kinds_item;
         $displays->items_amount = $request->items_amount;
+        $displays->touch();
         $displays->save();
         //ファイルアップロード
         $request->file('display_img')->storeAs('public', $displays->id.'.'.$request->display_img->extension());
